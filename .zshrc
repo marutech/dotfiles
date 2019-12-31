@@ -17,6 +17,9 @@ autoload -Uz compinit
 compinit
 
 # prompt
+autoload -Uz add-zsh-hook
+blank_line() { echo }
+add-zsh-hook precmd blank_line
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr '%F{109}%K{109}'
