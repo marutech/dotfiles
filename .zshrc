@@ -16,6 +16,13 @@ zstyle :compinstall filename '/home/koki/.zshrc'
 autoload -Uz compinit
 compinit
 
+# alias
+alias ls='ls --color=auto'
+alias ll='ls -hl'
+alias la='ll -a' 
+alias diff='diff --color=auto'
+alias grep='grep --color=auto'
+
 # prompt
 autoload -Uz add-zsh-hook
 blank_line() { echo }
