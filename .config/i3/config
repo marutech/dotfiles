@@ -12,14 +12,11 @@ font pango:Source Code Pro Medium 14
 default_border none
 
 # hiding borders on workspace with only one window visible
-
-assign [class="Termite"] 1
-assign [class="Chromium"] 2
-
+#
 for_window [class="termite"] fullscreen enable global
 
 exec --no-startup-id termite
-exec --no-startup-id chromium
+exec --no-startup-id google-chrome-stable
 
 # set wallpaper
 exec --no-startup-id sh ~/.fehbg
@@ -53,7 +50,7 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # start a web browser
-bindsym $mod+i exec chromium
+bindsym $mod+i exec google-chrome-stable
 
 # kill focused window
 bindsym $mod+w kill
